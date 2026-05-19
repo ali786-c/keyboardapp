@@ -22,6 +22,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.keyboad.ui.settings.components.SectionHeader
 import com.example.keyboad.ui.settings.components.SettingsCard
+import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.Image
+import com.example.keyboad.R
+import androidx.compose.ui.layout.ContentScale
 
 @Composable
 fun DashboardScreen() {
@@ -36,20 +40,17 @@ fun DashboardScreen() {
     ) {
         Spacer(modifier = Modifier.height(48.dp))
         
-        // Brand Header
-        Box(
-            modifier = Modifier
-                .size(80.dp)
-                .background(Color(0xFF21262D), androidx.compose.foundation.shape.CircleShape),
-            contentAlignment = Alignment.Center
-        ) {
-            Icon(Icons.Default.Keyboard, contentDescription = null, tint = Color(0xFF8AB4F8), modifier = Modifier.size(40.dp))
-        }
+        // Brand Header Logo
+        Image(
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = "SwiftMind Logo",
+            modifier = Modifier.size(100.dp)
+        )
         
         Spacer(modifier = Modifier.height(16.dp))
         
         Text(
-            text = "LinguaKey AI",
+            text = "SwiftMind",
             fontSize = 32.sp,
             fontWeight = FontWeight.ExtraBold,
             color = Color.White,
@@ -80,7 +81,7 @@ fun DashboardScreen() {
 
         SettingsCard(
             title = "Switch Input Method",
-            description = "Choose LinguaKey as your primary keyboard",
+            description = "Choose SwiftMind as your primary keyboard",
             icon = Icons.Default.KeyboardAlt,
             onClick = {
                 val imm = context.getSystemService(android.content.Context.INPUT_METHOD_SERVICE) as InputMethodManager

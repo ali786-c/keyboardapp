@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.google.generativeai)
     implementation(libs.androidx.lifecycle.service)
     implementation(libs.kotlinx.serialization.json)
+    implementation("androidx.core:core-splashscreen:1.0.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -756,7 +756,7 @@ private fun SuggestionBar(
                 } else if (errorMessage != null) {
                     Text(errorMessage, color = Color.Red, fontSize = 12.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                 } else {
-                    Text("LinguaKey AI", color = HintColor.copy(alpha = 0.2f), fontSize = 12.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
+                    Text("SwiftMind", color = HintColor.copy(alpha = 0.2f), fontSize = 12.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                 }
             }
         }

@@ -42,7 +42,7 @@ fun DashboardScreen() {
         
         // Brand Header Logo
         Image(
-            painter = painterResource(id = R.drawable.logo),
+            painter = painterResource(id = R.drawable.ic_logo_foreground),
             contentDescription = "SwiftMind Logo",
             modifier = Modifier.size(100.dp)
         )
